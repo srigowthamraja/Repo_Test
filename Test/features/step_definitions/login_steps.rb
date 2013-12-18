@@ -4,7 +4,7 @@ end
 
 When(/^enter user name as (.*)$/) do |user_name|
   fill_in "txtEMailId",:with=>user_name
-end
+end 
 
 When(/^enter password as (.*)$/) do |password|
   fill_in "txtPassword",:with=>password
@@ -18,4 +18,8 @@ Then(/^I'm able to see "(.*?)"$/) do |page_title|
   find("div.text").should have_text(page_title)  
 end
 
+
+
+ 
+  
 
